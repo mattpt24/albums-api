@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croft & Cotes API</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+    font-family: "Syne", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.orange-txt {
+    color: orangered;
+    font-size: 2.8rem;
+}
+
+body {
+    background: rgb(249, 247, 235);
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-container {
+    width:60%;
+    margin: 0 auto;
+    max-width: 1600px;
+}
+
+
+.intro {
+    padding-top: 8rem;
+}
+
+
+.intro h1 {
+    font-size: 3rem;
+}
+
+.author {
+    font-size: 1.2rem;
+    margin: 2rem 0;
+}
+
+.author a {
+    color: orangered;
+}
+
+p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: grey;
+    margin-bottom: 2rem;
+}
+
+p a {
+    color: orangered;
+}
+
+
+hr {
+    margin: 1srem 0;
+    opacity: .5;
+}
+
+
+.documentation {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 0;
+}
+
+
+.documentation-request__name {
+    font-size: 2rem;
+}
+
+.documentation-request__description {
+    opacity: .6;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+
+.documentation-request__example-title {
+    width: fit-content;
+    padding: .6rem;
+    border-radius: 10px;
+    background: orangered;
+    color: white;
+    margin: 3rem 0 2rem 0;
+    font-size: 1rem;
+}
+
+.documentation-request__example-url {
+    background: rgba(0,0,0,0.05);
+    padding: 1.4rem 1rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: orangered;
+}
+
+.documentation-request__example-url span {
+    color: #222;
+}
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+    <div class="intro">
+        <h1>My Favourite Albums API</h1>
+        <div class="author">Created by <a href="https://mattpersellthompson.com" target="_blank">Matt Persell-Thompson</a></div>
+        <p>Hi, this is a free open source API i've created to practice building and interacting with API's. It is an API of all of my favourite albums i've listened to over the years. It is built using Node.js , Express.js and MongoDB. Happy coding!</p>
+    </div>
+    <hr>
+    <div class="documentation">
+
+        <div class="documentation-request">
+            <h3 class="documentation-request__name">All Songs<span class="orange-txt">.</span></h3>
+            <div class="documentation-request__description">Return all 15 songs</div>
+            <div class="documentation-request__example-title">Useage</div>
+            <div class="documentation-request__example-url"><span>https://songs-api-puce.vercel.app</span>/albums</div>
+        </div>
+
+        <hr>
+        <div class="documentation-request">
+            <h3 class="documentation-request__name">Random Song<span class="orange-txt">.</span></h3>
+            <div class="documentation-request__description">Return a random song on refresh.</div>
+            <div class="documentation-request__example-title">Useage</div>
+            <div class="documentation-request__example-url"><span>https://songs-api-puce.vercel.app</span>/albums/random</div>
+            </div>
+        <hr>
+            <div class="documentation-request">
+             <h3 class="documentation-request__name">Specific Song<span class="orange-txt">.</span></h3>
+             <div class="documentation-request__description">Get a specfic song by ID. There are 15 songs in total</div>
+             <div class="documentation-request__example-title">Useage</div>
+             <div class="documentation-request__example-url"><span>https://songs-api-puce.vercel.app</span>/albums/{id-number}</div>
+            </div>
+        
+            
+        <hr>
+        <div class="documentation-request">
+        <h3 class="documentation-request__name">Filter Songs<span class="orange-txt">.</span></h3>
+        <div class="documentation-request__description">You can filter songs by year and/or author</div>
+        <div class="documentation-request__example-title">Useage</div>
+        <div class="documentation-request__example-url"><span>https://songs-api-puce.vercel.app</span>/filter?year=2001&genre=Pop</div>
+        </div>
+
+
+    </div>
+    </div>
+
+</body>
+</html>
