@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 const app = express();
 const port = 3200;
 
@@ -25,6 +26,9 @@ mongoose.connect("mongodb+srv://mattypt:albumapipassword@albumdb.4mmqm.mongodb.n
 
 // BODY PARSING
 app.use(bodyParser.urlencoded({ extended : true }));
+
+
+app.use(cors());
 
 
 // USE PUBLIC AS BASE FOLDER TO STATIC FILES
